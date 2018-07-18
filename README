@@ -1,0 +1,5 @@
+
+docker build -t staticsite .
+docker run --rm -itd -p 8080:80 -v "/Users/pweinkam/docker/nooklyate/mysite/web/:/usr/share/nginx/html" staticsite
+docker run --rm -itd -p 8080:80 -v "/home/ubuntu/docker/staticsite/web/:/usr/share/nginx/html" staticsite
+
